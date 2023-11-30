@@ -1,0 +1,22 @@
+@import "./../../style/style.scss";
+
+.hamburger {
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;
+	height: 35px;
+	cursor: pointer;
+	@media (max-width: 1199px) {
+		display: flex;
+		margin-left: 10px;
+	}
+}
+.line {
+	width: 30px;
+	height: 3px;
+	background: var(--hamburger-bg);
+}
+.line:nth-child(2) {
+	width: 36px;
+}

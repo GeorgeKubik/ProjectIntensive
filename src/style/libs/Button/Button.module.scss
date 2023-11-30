@@ -1,0 +1,85 @@
+@import "./../../style.scss";
+
+.btn {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+	border-radius: 8px;
+	transition: all 0.3s;
+	@media (max-width: 1199px) {
+		font-size: 14px;
+		line-height: 120%;
+	}
+}
+.headerBtn {
+	color: var(--btn-color-white);
+	padding: 8px 20px;
+	border: 1px solid var(--btn-bg-black);
+	background: var(--btn-bg-black);
+	&:hover {
+		background: #4d4c4c;
+	}
+	@media (max-width: 1199px) {
+		padding: 6px 15px;
+	}
+}
+.btnBlack {
+	padding: 12px 20px;
+	color: var(--btn-color-white);
+	border: 1px solid var(--btn-bg-black);
+	background: var(--btn-bg-black);
+	&:hover {
+		background: #4d4c4c;
+	}
+}
+.btnWhite {
+	padding: 12px 20px;
+	color: var(--btn-color-black);
+	border: 1px solid var(--btn-border-gray);
+	background: var(--btn-bg-white);
+	&:hover {
+		background: #ccc9c9;
+	}
+}
+.btnGray {
+	padding: 12px 24px;
+	color: var(--btn-bg-black);
+	background: var(--btn-bg-gray);
+	&:hover {
+		background: #ccc3c3;
+	}
+}
+
+.btnWhiteNotBorder {
+	padding: 12px 24px;
+	background: var(--btn-bg-white);
+	border: none;
+	&:hover {
+		background: #ccc3c3;
+	}
+}
+
+.btnBlack,
+.btnWhite {
+	@media (max-width: 1199px) {
+		padding: 10px 18px;
+	}
+	@media (max-width: 959px) {
+		padding: 8px 16px;
+	}
+	@media (max-width: 767px) {
+		padding: 8px 14px;
+	}
+}
+.btnGray,
+.btnWhiteNotBorder {
+	@media (max-width: 1199px) {
+		padding: 10px 20px;
+	}
+	@media (max-width: 959px) {
+		padding: 8px 18px;
+	}
+	@media (max-width: 767px) {
+		padding: 8px 14px;
+	}
+}

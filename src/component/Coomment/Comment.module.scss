@@ -1,0 +1,118 @@
+@import "./../../style/style.scss";
+
+.comment {
+	min-height: 590px;
+	padding: 112px 0;
+	border-radius: 0px 0px 16px 16px;
+	background: var(--comment-bg);
+	@media (max-width: 1199px) {
+		min-height: 520px;
+		padding: 80px 0;
+	}
+	@media (max-width: 959px) {
+		min-height: 480px;
+		padding: 60px 0;
+	}
+	@media (max-width: 767px) {
+		min-height: 420px;
+		padding: 40px 0;
+	}
+	@media (max-width: 575px) {
+		min-height: 380px;
+		padding: 30px 0;
+	}
+	.carousel {
+		overflow: hidden;
+	}
+	.wrapper {
+		.card {
+			margin: 0 auto;
+			padding: 0 104px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-height: 366px;
+			width: 80%;
+			border-radius: 16px;
+			background: var(--comment-card-bg);
+			@media (max-width: 1199px) {
+				width: 100%;
+				padding: 0 94px;
+				min-height: 350px;
+			}
+			@media (max-width: 959px) {
+				padding: 0 64px;
+				min-height: 340px;
+			}
+			@media (max-width: 767px) {
+				padding: 0 54px;
+				min-height: 330px;
+			}
+			@media (max-width: 575px) {
+				padding: 0 14px;
+				min-height: 320px;
+			}
+			.cardComment {
+				color: var(--main-text-color);
+				text-align: center;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 140%;
+				@media (max-width: 1199px) {
+					font-size: 20px;
+					line-height: 120%;
+				}
+				@media (max-width: 959px) {
+					font-size: 18px;
+				}
+				@media (max-width: 767px) {
+					font-size: 16px;
+				}
+				@media (max-width: 575px) {
+					font-size: 14px;
+				}
+			}
+			.user {
+				margin-top: 32px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 20px;
+				.userPhoto {
+					width: 56px;
+					height: 56px;
+					border-radius: 100%;
+				}
+				.name {
+					color: var(--comment-user-name);
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 150%;
+					&:nth-of-type(1) {
+						margin-right: 5px;
+					}
+					@media (max-width: 575px) {
+						font-size: 12px;
+					}
+					@media (max-width: 575px) {
+						font-size: 12px;
+					}
+				}
+				.achievements {
+					color: var(--comment-user-achievements);
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 150%;
+					@media (max-width: 959px) {
+						font-size: 14px;
+					}
+					@media (max-width: 575px) {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}

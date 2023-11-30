@@ -1,0 +1,105 @@
+:root {
+	/* Colors */
+
+	--black: #333333;
+	--white: #ffffff;
+	--light-grey: #f4f4f4;
+	--dark-grey: #e6e6e6;
+	--dark-grey-20: #707070;
+	--blue: #c6dcf8;
+
+	//Main-color
+	--title-color: var(--black);
+	--main-text-color: var(--black);
+	--section-bg: var(--white);
+	--main-background-color: var(--white);
+	//btn
+	--btn-bg-black: var(--black);
+	--btn-bg-white: var(--white);
+	--btn-color-black: var(--black);
+	--btn-color-white: var(--white);
+	--btn-bg-gray: var(--dark-grey);
+	--btn-border-gray: var(--dark-grey);
+	//Header
+	--header-bg: var(--light-grey);
+	--header-menu-item-color: var(--black);
+	--header-menu-item-bg: var(--white);
+	--header-btn-color: var(--white);
+	--header-btn-bg: var(--black);
+
+	// Hero
+	--hero-btn-bg-black: var(--black);
+	--hero-btn-bg-white: var(--white);
+	--hero-btn-color-black: var(--black);
+	--hero-btn-color-white: var(--white);
+	--hero-btn-border: var(--dark-grey);
+
+	// About
+	--about-block-bg: var(--white);
+	--about-list-item-color: var(--black);
+	--about-list-item-before-bg: var(--blue);
+	--about-btn-bg: var(--light-grey);
+	--about-btn-color: var(--black);
+
+	//Process
+	--process-bg: var(--dark-grey);
+	--process-numbering-bg: var(--white);
+	--process-numbering-color: var(--black);
+	--process-list-title: var(--black);
+
+	//JustDoIt
+	--JustDoIt-card-bg: var(--white);
+	--JustDoIt-card-title: var(--black);
+	--JustDoIt-card-descr-color: var(--dark-grey-20);
+
+	//Workshop
+	--workshop-bg: var(--white);
+	--workshop-block-bg: var(--dark-grey);
+
+	//Comment
+	--comment-bg: var(--blue);
+	--comment-card-bg: var(--white);
+	--comment-user-name: var(--black);
+	--comment-user-achievements: var(--black);
+
+	//price {
+	--price-card-bg: var(--white);
+	--price-card-bg-second: var(--blue);
+	--price-rate-color: var(--black);
+	--price-btn-bg-black: var(--black);
+	--price-btn-bg-white: var(--white);
+	--price-btn-border-black: var(--black);
+	--price-btn-border-white: var(--white);
+	--price-btn-color-black: var(--black);
+	--price-btn-color-white: var(--white);
+	--price-list-item: var(--black);
+
+	// Form
+	--form-input-border: var(--dark-grey);
+	--form-input-bg: var(--white);
+	--form-descr-color: var(--dark-grey-20);
+	
+	//Footer
+	--footer-bg: var(--white);
+
+	// Hamburger 
+	--hamburger-bg: var(--black);
+
+}
+
+.container {
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 1312px;
+	padding: 0 64px;
+	height: 100%;
+	@media (max-width: 959px) {
+		padding: 0 32px;
+	}
+	@media (max-width: 767px) {
+		padding: 0 22px;
+	}
+	@media (max-width: 576px) {
+		padding: 0 10px;
+	}
+}

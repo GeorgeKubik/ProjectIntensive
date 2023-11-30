@@ -1,0 +1,127 @@
+@import "./../../style/style.scss";
+
+.about {
+	padding: 112px 0;
+	@media (max-width: 1199px) {
+		padding: 80px 0;
+	}
+	@media (max-width: 959px) {
+		padding: 70px 0;
+	}
+	@media (max-width: 767px) {
+		padding: 60px 0;
+	}
+	@media (max-width: 575px) {
+		padding: 40px 0;
+	}
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(280px, 648px));
+		justify-content: space-between;
+		gap: 16px;
+		@media (max-width: 1199px) {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(2, minmax(300px, 480px));
+		}
+		@media (max-width: 959px) {
+			grid-template-rows: repeat(2, minmax(280px, 380px));
+		}
+		@media (max-width: 767px) {
+			grid-template-rows: repeat(2, minmax(320px, 320px));
+		}
+		@media (max-width: 575px) {
+			grid-template-rows: repeat(2, minmax(280px, 280px));
+		}
+	}
+	.block {
+		padding: 20px 64px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		border-radius: 8px;
+		background: var(--about-block-bg);
+		@media (max-width: 1199px) {
+			padding: 20px 40px;
+		}
+		@media (max-width: 959px) {
+			padding: 10px 30px;
+		}
+		@media (max-width: 767px) {
+			padding: 10px 20px;
+		}
+		@media (max-width: 575px) {
+			padding: 10px;
+		}
+	}
+	.title {
+		width: 100%;
+		text-align: center;
+		color: var(--title-color);
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 120%;
+	}
+	.listItems {
+		margin-top: 32px;
+		margin-bottom: 48px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		gap: 16px;
+		@media (max-width: 1199px) {
+			margin-top: 28px;
+			margin-bottom: 40px;
+		}
+		@media (max-width: 959px) {
+			margin-top: 24px;
+			margin-bottom: 30px;
+			gap: 12px;
+		}
+		@media (max-width: 767px) {
+			margin-top: 20px;
+			margin-bottom: 24px;
+			gap: 10px;
+		}
+		@media (max-width: 575px) {
+			margin-top: 14px;
+			margin-bottom: 10px;
+			gap: 8px;
+		}
+	}
+	.listItem {
+		position: relative;
+		margin-left: 24px;
+		color: var(--about-list-item-color);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%;
+		&:before {
+			content: "";
+			position: absolute;
+			left: -22px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 12px;
+			height: 12px;
+			background: var(--about-list-item-before-bg);
+			border-radius: 100%;
+		}
+		@media (max-width: 959px) {
+			font-size: 14px;
+		}
+		@media (max-width: 767px) {
+			font-size: 12px;
+		}
+		@media (max-width: 575px) {
+			font-size: 11px;
+		}
+	}
+	.img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+}

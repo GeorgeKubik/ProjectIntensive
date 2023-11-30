@@ -1,0 +1,35 @@
+@import "./../../style/style.scss";
+.consultation {
+	padding: 112px 0;
+	background: #fff;
+	border-radius: 16px 16px 0 0;
+	@media (max-width: 1199px) {
+		padding: 80px 0;
+	}
+	@media (max-width: 959px) {
+		padding: 70px 0;
+	}
+	@media (max-width: 767px) {
+		padding: 20px 0 0 0;
+	}
+}
+.title {
+	color: var(--title-color);
+	text-align: center;
+	margin-bottom: 32px;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 120%;
+	@media (max-width: 1199px) {
+		font-size: 40px;
+	}
+	@media (max-width: 959px) {
+		font-size: 32px;
+	}
+	@media (max-width: 767px) {
+		font-size: 28px;
+	}
+	@media (max-width: 575px) {
+		font-size: 20px;
+	}
+}

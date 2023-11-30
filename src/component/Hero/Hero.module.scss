@@ -1,0 +1,86 @@
+@import "./../../style/style.scss";
+
+.hero {
+	padding-top: 112px;
+	margin-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--section-bg);
+	border-radius: 16px;
+	@media (max-width: 1199px) {
+		padding-top: 80px;
+		margin-bottom: 60px;
+	}
+	@media (max-width: 959px) {
+		padding-top: 60px;
+		margin-bottom: 40px;
+	}
+	@media (max-width: 767px) {
+		padding-top: 40px;
+		margin-bottom: 20px;
+	}
+	@media (max-width: 575px) {
+		padding-top: 30px;
+		margin-bottom: 10px;
+	}
+	.title {
+		color: var(--title-color);
+		text-align: center;
+		font-size: 56px;
+		font-weight: 700;
+		line-height: 120%;
+		@media (max-width: 1199px) {
+			font-size: 48px;
+			line-height: 100%;
+		}
+		@media (max-width: 959px) {
+			font-size: 40px;
+		}
+		@media (max-width: 767px) {
+			font-size: 32px;
+		}
+		@media (max-width: 575px) {
+			font-size: 20px;
+		}
+	}
+	.descr {
+		width: 100%;
+		text-align: left;
+		margin-top: 24px;
+		color: var(--main-text-color);
+		text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%;
+		@media (max-width: 1199px) {
+			font-size: 14px;
+			line-height: 120%;
+		}
+		@media (max-width: 767px) {
+			font-size: 13px;
+		}
+		@media (max-width: 575px) {
+			font-size: 11px;
+		}
+	}
+	.btns {
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+		gap: 16px;
+		@media (max-width: 767px) {
+			margin-top: 20px;
+		}
+	}
+	.background {
+		margin-top: 80px;
+		width: 100%;
+		height: auto;
+		border-radius: 16px;
+		@media (max-width: 767px) {
+			margin-top: 60px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@import "./../../style/style.scss";
+
+.policy {
+	padding-top: 32px;
+	margin-top: 80px;
+	border-top: 2px solid var(--dark-grey-20, #707070);
+	opacity: 0.5;
+	@media (max-width: 1199px) {
+		margin-top: 60px;
+	}
+	@media (max-width: 767px) {
+		margin-top: 30px;
+	}
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 24px;
+		@media (max-width: 575px) {
+			flex-direction: column;
+			gap: 14px;
+		}
+		.organization,
+		.policyLink {
+			color: var(--dark-grey-20, #707070);
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 150%;
+		}
+	}
+}

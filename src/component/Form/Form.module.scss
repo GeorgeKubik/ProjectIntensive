@@ -1,0 +1,36 @@
+@import "./../../style/style.scss";
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.wrapper {
+		display: flex;
+		gap: 12px;
+		@media (max-width: 959px) {
+			flex-direction: column;
+		}
+	}
+	.input {
+		width: 323px;
+		padding: 12px;
+		border-radius: 8px;
+		border: 1px solid var(--form-input-border);
+		background: var(--form-input-bg);
+		@media (max-width: 767px) {
+			width: 260px;
+		}
+		@media (max-width: 575px) {
+			width: 100%;
+		}
+	}
+	.descr {
+		margin-top: 16px;
+		color: var(--form-descr-color);
+		text-align: center;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 150%;
+	}
+}
